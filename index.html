@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Document</title>
+    <style>
+        
+        #navigation{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #navigation img{
+            margin: 10px;
+        }
+
+        body{
+            background-color: black;
+        }
+
+        #navigation h1{
+            color: gold;
+        }
+
+        .nav a{
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #color{
+            color: gold;
+            text-decoration: underline;
+        }
+
+        #navigation input{
+            background-color: black;
+            color: white;
+        }
+
+        #grid{
+            display: grid;
+            grid-template-areas: 
+            "section1 section1 section1 section1 section2"
+            "section1 section1 section1 section1 section2"
+            "section1 section1 section1 section1 section3"
+            "section1 section1 section1 section1 section3";
+            gap: 10px;
+        }
+
+        #section1{
+            grid-area: section1;
+            border: 1px white solid;
+      
+            height: 200vh;
+        }
+
+        #section2{
+            grid-area: section2;
+         
+        }
+
+        #section3{
+            grid-area: section3;
+            border: 2px solid white;
+            margin-top: 5px;
+        }
+
+        .header1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px white solid;
+        }
+        
+        .logo{
+            display: flex;
+            align-items: center;
+            background-color: gold;
+        }
+
+        #white{
+            color: white;
+        }
+
+        .logo a{
+            color: black;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .card-main {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          padding: 10px;
+        }
+
+        .card img{
+            width: 200px;
+            height: 300px;
+        }
+
+
+        .card h1{
+            color: gold;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 1px;
+        }
+
+        .card{
+            /*border: 1px red solid;*/
+            display: block;
+            margin: auto;
+        }
+
+        .card p{
+            color: white;
+            margin: 0 1px 10px 0;
+            text-align: center;
+        }
+
+        .ads {
+           
+            /* position: absolute; */
+            /* top: 13%; */
+            /* left: 76%; */
+            padding: 0;
+            border: 1px solid white;
+          
+        }
+
+        .design{
+            display: flex;
+            align-items: center;
+            background-color: gold;
+            padding: 0;
+            margin-bottom: 10px;
+            border: 1px white solid;
+            font-size: 10px;
+        }
+
+        .square{
+            color: white;
+            padding: 0 5px;
+          
+        }
+        .square h1{
+            font-size: 20px;
+            color: gold;
+        }
+
+        .ongoing{
+            background-color: gold;
+            border: 2px white solid;
+        }
+
+        .ads2 h2{
+            background-color: gold;
+            border: 2px white solid;
+        }
+
+        #section3 ul li{
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navigation">
+            <img src="logo.png" alt="" width="150px">
+            <div class="nav">
+                <a href="" id="color">Home</a>
+                <a href="">Anime List</a>
+                <a href="">New Season</a>
+                <a href="">Movies</a>
+                <a href="">Popular</a>
+            </div>
+            <input type="text" placeholder="Search..">
+    </div>
+
+    <div id="grid">
+        <div id="section1">
+            
+            <div class="header">
+                <div class="logo">
+                    <img src="Narutobg.png" alt="" width="40px" height="50px">
+                    <a href="" id="white">RECENT RELEASE</a> | 
+                    <a href="">DUB</a> | 
+                    <a href="">CHINESE</a>
+                </div>
+            </div>
+           
+             <div class="card-main">
+                <div class="card">
+                    <img src="pokemon-shinsaku-anime-1680202985.png" alt="" title="Pokemon">
+                    <h1>Pokemon</h1>
+                    <p>Episode: 30</p>
+                </div>
+                <div class="card">
+                    <img src="undead-unluck-1696013292.png" alt="" title="Undead Unluck">
+                    <h1>Undead Unluck</h1>
+                    <p>Episode: 8</p>
+                </div>
+                <div class="card">
+                    <img src="tate-no-yuusha-no-nariagari-season-3-1698302959.png" alt="" title="Shield Hero Seaosn 3">
+                    <h1>Shield Hero Season 3</h1>
+                    <p>Episode: 8</p>
+                </div>
+                <div class="card">
+                    <img src="rurouni-kenshin-meiji-kenkaku-romantan-2023-1688156760.png" alt="" title="Samurai X">
+                    <h1>Samurai X</h1>
+                    <p>Episode: 21</p>
+                </div>
+                <div class="card">
+                    <img src="jujutsu-kaisen-tv-2nd-season-1688154932.png" alt="" title="Jujutsu Kaisen">
+                    <h1>Jujutsu Kaisen</h1>
+                    <p>Episode: 18</p>
+                </div>
+                <div class="card">
+                    <img src="spy-x-family-season-2-1696012743.png" alt="" title="Spy x Family">
+                    <h1>Spy x Family</h1>
+                    <p>Episode: 8</p>
+                </div>
+                <div class="card">
+                    <img src="kage-no-jitsuryokusha-ni-naritakute-2nd-season-1698286773.png" alt="" title="Eminence of shadow">
+                    <h1>Eminence of Shadow</h1>
+                    <p>Episode: 8</p>
+                </div>
+                <div class="card">
+                    <img src="dr-stone-new-world-part-2-1696007370.png" alt="" title="Dr.Stone">
+                    <h1>Dr. Stone</h1>
+                    <p>Episode: 7</p>
+                </div>
+                <div class="card">
+                    <img src="doraemon-movie-22-nobita-to-tsubasa-no-yuusha-tachi.png" alt="" title="Doraemon">
+                    <h1>Doraemon</h1>
+                    <p>Episode: 1022</p>
+                </div>
+                <div class="card">
+                    <img src="migi-to-dali.png" title="Migi to Dali">
+                    <h1>Migi to Dali</h1>
+                    <p>Episode: 7</p>
+                </div>
+                <div class="card">
+                    <img src="kimetsu-no-yaiba-asakusa-hen.png" alt="" title="Demon Slayer">
+                    <h1>Demon Slayer Movie</h1>
+                    <p>Episode: 1</p>
+                </div>
+                <div class="card">
+                    <img src="tensei-shitara-slime-datta-ken-coleus-no-yume.png" alt="" title="Reincarnated as slime">
+                    <h1>Reincarnated as Slime</h1>
+                    <p>Episode: 5</p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="section2">
+           
+            <div class="ads">
+                <div class="design">
+                    <img src="Kibabg.png" alt="" width="50px" height="50px">
+                    <h1>Advertisement</h1>
+                </div>
+                <div class="square">
+                    <div class="list">
+                        <h1>1.Goblin Slayer III</h1>
+                        <p>Epsiode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>2.Jujutsu Kaisen</h1>
+                        <p>Epsiode:18</p>
+                    </div>
+                    <div class="list">
+                        <h1>3.Undead Unluck</h1>
+                        <p>Epsiode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>4.Kanojo mo Kanojo Season2</h1>
+                        <p>Epsiode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>5. Spy x Family Season2</h1>
+                        <p>Episode: 7</p>
+                    </div>
+                    <div class="list">
+                        <h1>6.Blue Giant</h1>
+                        <p>Episode: 7</p>
+                    </div>
+                    <div class="list">
+                        <h1>7.Shield Hero Season 3</h1>
+                        <p>Episode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>8.Tokyo Revenger</h1>
+                        <p>Episode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>9.Arknights</h1>
+                        <p>Epsiode: 8</p>
+                    </div>
+                    <div class="list">
+                        <h1>10.One Piece</h1>
+                        <p>Episode: 1034</p>
+                    </div>
+                </div>
+            </div>
+            <div id="section3">
+                <div class="ads2">
+                    <h2>Ongoing Series</h2>
+                </div>
+                <ul>
+                    <li>Dragonball</li>
+                    <li>Shield hero</li>
+                    <li>Detective of conan</li>
+                    <li>One piece</li>
+                    <li>Migi to dali</li>
+                    <li>Undead Unluck</li>
+                    <li>Chainsaw man</li>
+                    <li>Jujutsu Kaisen</li>
+                    <li>Pokemon</li>
+                    <li>Digimon</li>
+                    <li>Yu-gi-oh</li>
+                    <li>Bongou stray dog</li>
+                    <li>Tousochuu: Great mission</li>
+                    <li>Mf ghost</li>
+                    <li>Vinland saga</li>
+                    <li>Wotakoi</li>
+                    <li>One punch man</li>
+                    <li>Spy x family</li>
+                    <li>Hunter x hunter</li>
+                    <li>Berserk</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
