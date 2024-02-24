@@ -1,0 +1,165 @@
+#navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navigation img{
+    margin: 10px;
+}
+
+body{
+    background-color: black;
+}
+
+#navigation h1{
+    color: gold;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#color{
+    color: gold;
+    text-decoration: underline;
+}
+
+#navigation input{
+    background-color: black;
+    color: white;
+}
+
+#grid{
+    display: grid;
+    grid-template-areas: 
+    "section1 section1 section1 section1 section2"
+    "section1 section1 section1 section1 section2"
+    "section1 section1 section1 section1 section3"
+    "section1 section1 section1 section1 section3";
+    gap: 10px;
+}
+
+#section1{
+    grid-area: section1;
+    border: 1px white solid;
+
+    height: 200vh;
+}
+
+#section2{
+    grid-area: section2;
+ 
+}
+
+#section3{
+    grid-area: section3;
+    border: 2px solid white;
+    margin-top: 5px;
+}
+
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px white solid;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    background-color: gold;
+}
+
+#white{
+    color: white;
+}
+
+.logo a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.card-main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px;
+}
+
+.card img{
+    width: 200px;
+    height: 300px;
+}
+
+
+.card h1{
+    color: gold;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 1px;
+}
+
+.card{
+    /*border: 1px red solid;*/
+    display: block;
+    margin: auto;
+}
+
+.card p{
+    color: white;
+    margin: 0 1px 10px 0;
+    text-align: center;
+}
+
+.ads {
+   
+    /* position: absolute; */
+    /* top: 13%; */
+    /* left: 76%; */
+    padding: 0;
+    border: 1px solid white;
+  
+}
+
+.design{
+    display: flex;
+    align-items: center;
+    background-color: gold;
+    padding: 0;
+    margin-bottom: 10px;
+    border: 1px white solid;
+    font-size: 10px;
+}
+
+.square{
+    color: white;
+    padding: 0 5px;
+  
+}
+.square h1{
+    font-size: 20px;
+    color: gold;
+}
+
+.ongoing{
+    background-color: gold;
+    border: 2px white solid;
+}
+
+.ads2 h2{
+    background-color: gold;
+    border: 2px white solid;
+}
+
+#section3 ul li{
+    color: white;
+}
+
+#white b{
+    text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
+}
