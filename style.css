@@ -1,6 +1,9 @@
-* {
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 #navigation {
@@ -10,6 +13,14 @@
 }
 
 #navigation img {
+  margin: 10px;
+}
+
+input[placeholder="Search.."] {
+  border-radius: 10px;
+  width: 300px;
+  height: 30px;
+  padding: 0 10px;
   margin: 10px;
 }
 
@@ -52,8 +63,7 @@ body {
 #section1 {
   grid-area: section1;
   border: 1px white solid;
-
-  height: 200vh;
+  height: auto;
 }
 
 #section2 {
@@ -63,7 +73,11 @@ body {
 #section3 {
   grid-area: section3;
   border: 2px solid white;
-  margin-top: 5px;
+  margin: 10px 0 0 0;
+}
+
+#section3 ul li {
+  padding: 10px 0 0 10px;
 }
 
 .header1 {
@@ -91,7 +105,7 @@ body {
 
 .card-main {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 10px;
 }
 
@@ -108,7 +122,6 @@ body {
 }
 
 .card {
-  /*border: 1px red solid;*/
   display: block;
   margin: auto;
 }
@@ -129,7 +142,7 @@ body {
   align-items: center;
   background-color: gold;
   padding: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
   border: 1px white solid;
   font-size: 10px;
 }
@@ -161,7 +174,16 @@ body {
   text-shadow: 0 0 10px black, 0 0 20px black, 0 0 30px black;
 }
 
-@media screen and (max-width: 767px) {
+ul li {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    display: none;
+  }
+}
+/* @media screen and (max-width: 767px) {
   .card-main {
     display: flex;
     justify-content: space-between;
@@ -199,4 +221,4 @@ body {
   .header {
     background-color: gold;
   }
-}
+} */
